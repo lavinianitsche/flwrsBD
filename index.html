@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="contactForm">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="text" id="descricao" placeholder="Descrição" required>
+      <input type="text" id="preco" placeholder="Preço (ex: 19,90)" required>
+      <button type="submit">Salvar</button>
+    </form>
+
+    <hr>
+
+    <h2>Produtos Cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Preço</th>
+          <th>Data</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaProdutos"></tbody>
+    </table>
+  </div>
+
+  <!-- <script type="module" src="js/enviarDados.js"></script>
+  <script type="module" src="js/lerDados.js"></script> -->
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
